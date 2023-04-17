@@ -12,6 +12,17 @@ const questions = [
         message: "What would you like to view?",
         choices: ["view all departments", "view all roles", "view all employees", "add a department", "add a role", "add an employee", "update an employee role"],
     },
+    {
+        name: "second_question",
+        type: "list",
+        message: "What would you like to do?",
+        choices: ["Add Department", "other"],
+    },
+    {
+        name: "third_question",
+        type: "input",
+        message: 'What is the name of the department?',
+    },
 
 ];
 
