@@ -20,4 +20,4 @@ n/a
 Please refer to the LICENSE in the repo.
 
 ## Screenshots of Application
-![Screenshot 2023-04-18 at 12 02 10 PM](https://user-images.githubusercontent.com/118202928/232836164-2c63d35f-92e3-4904-8831-bb79af171e8d.png)
+![Screenshot 2023-04-18 at 12 02 17 PM](https://user-images.githubusercontent.com/118202928/232836318-4be2cb2c-13f0-4549-be47-2f6afeb684c0.png)
