@@ -35,7 +35,8 @@ const questions = [
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log("Here we go...");
-        // writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
+        writeToFile('seeds.sql') 
+        // generateMarkdown({ ...inquirerResponses }));
     });
 }
 

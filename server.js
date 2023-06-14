@@ -1,7 +1,11 @@
 const express = require('express');
 
+const inquirer = require('inquirer');
+
 const mysql = require('mysql2');
-const path = require('path')
+const path = require('path');
+
+const consoleTable = require('console.table');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -13,14 +17,14 @@ app.use(express.urlencoded({ extended: true })); // Check if should be true or f
 // Connect to database
 const db = mysql.createConnection(
     {
-      host: 'localhost',
+      host: '127.0.0.1',
       // MySQL username,
       user: 'root',
       // MySQL password
       password: '1422',
-      database: 'tbd_db' // To be Renamed
+      database: 'hr_db' 
     },
-    console.log(`Connected to the tbd_db database.`)
+    console.log(`Connected to the hr_db database.`)
   );
   
   // Query database
