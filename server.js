@@ -7,8 +7,8 @@ const path = require('path');
 
 const consoleTable = require('console.table');
 
-const app = express();
 const PORT = process.env.PORT || 3001;
+const app = express();
 
 // Express Middleware
 app.use(express.json());
@@ -22,9 +22,9 @@ const db = mysql.createConnection(
       user: 'root',
       // MySQL password
       password: '1422',
-      database: 'hr_db' 
+      database: 'resource_db' 
     },
-    console.log(`Connected to the hr_db database.`)
+    console.log(`Connected to the resource_db database.`)
   );
   
   // Query database
