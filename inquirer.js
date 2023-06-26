@@ -1,43 +1,26 @@
 // TODO: Include packages needed for this application
-const fs = require('fs');
-const path = require('path');
 const inquirer = require('inquirer');
+const db = require('./db')
 
 // TODO: Create an array of questions for user input
 // From Inquirer Prompt Format
-const questions = [
-    {
-        name: "first_question",
-        type: "list",
-        message: "What would you like to view?",
-        choices: ["view all departments", "view all roles", "view all employees", "add a department", "add a role", "add an employee", "update an employee role"],
-    },
-    {
-        name: "second_question",
-        type: "list",
-        message: "What would you like to do?",
-        choices: ["Add Department", "other"],
-    },
-    {
-        name: "third_question",
-        type: "input",
-        message: 'What is the name of the department?',
-    },
-
-];
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-// }
-
-// TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(questions).then((inquirerResponses) => {
-        console.log("Here we go...");
-        writeToFile('seeds.sql') 
-        // generateMarkdown({ ...inquirerResponses }));
-    });
+function mainMenu() {
+    inquirer.prompt(
+        {
+            name: "choice",
+            type: "list",
+            message: "What would you like to view?",
+            choices: ["view all departments", "view all roles", "view all employees", "add a department", "add a role", "add an employee", "update an employee role"],
+        }    
+    ) .then (response => {
+        let choice = response.choice
+        switch (choice) {
+            case 'view all departments':
+                // Execute Function to View all Depts.
+            break;
+            case 'view all roles'
+        }
+    })
 }
 
 // Function call to initialize app

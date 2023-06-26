@@ -6,5 +6,15 @@
     "mysql2": "^3.2.3",
     "node": "^19.8.1",
     "path": "^0.12.7"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "12-mysql-tracker",
+  "description": "An Employee Tracker application for optimal human resources management",
+  "version": "1.0.0",
+  "main": "inquirer.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
