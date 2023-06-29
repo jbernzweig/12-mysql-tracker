@@ -19,7 +19,7 @@ function mainMenu() {
                 // Execute Function to View all Depts.
             break;
             case 'view all roles'
-        }
+        :}
     })
 }
 
